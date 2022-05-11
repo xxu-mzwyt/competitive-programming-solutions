@@ -1,4 +1,4 @@
-formula = input().replace('\r', '')
+formula = input().strip()
 
 curr_side = -1 # -1: left, 1: right
 curr_symbol = 1 # -1: negative, 1: positive
