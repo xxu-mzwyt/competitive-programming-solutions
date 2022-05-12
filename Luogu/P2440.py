@@ -1,11 +1,13 @@
 n, k = map(int, input().split())
 
+# L = list(map(int, input().split()))
+
 L = []
 for i in range(n):
     L.append(int(input()))
 
 lb = 0
-ub = sum(L) // k
+ub = int(1e8) + 1
 
 def cut(slen):
     sum = 0
@@ -19,6 +21,6 @@ while ub - lb > 1:
         lb = mid
     else:
         ub = mid
-    print('upper', ub, 'lower', lb)
+    # print('upper', ub, 'lower', lb)
 
 print(lb)
