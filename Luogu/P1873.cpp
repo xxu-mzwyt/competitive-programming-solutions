@@ -37,7 +37,6 @@ int main() {
 
     printf("%d", lb);
 
-
 }
 
 bool cut_tree(int ht) {
